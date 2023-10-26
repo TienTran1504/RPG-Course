@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Clone_Skill_Controller : MonoBehaviour
 {
+    private Player player;
     private SpriteRenderer sr;
     private Animator anim;
     [SerializeField] private float colorLoosingSpeed;
@@ -30,10 +31,11 @@ public class Clone_Skill_Controller : MonoBehaviour
             if (sr.color.a <= 0) Destroy(gameObject);
         }
     }
-    public void SetupClone(Transform _newTransform, float _cloneDuration, bool _canAttack, Vector3 _offset, Transform _closestEnemy, bool _canDuplicate, float _chanceToDuplicate){
+    public void SetupClone(Transform _newTransform, float _cloneDuration, bool _canAttack, Vector3 _offset, Transform _closestEnemy, bool _canDuplicate, float _chanceToDuplicate,Player _player){
 
         if (_canAttack) anim.SetInteger("AttackNumber", Random.Range(1, 3));
 
+        player = _player;
         transform.position = _newTransform.position + _offset;
         cloneTimer = _cloneDuration;
 
@@ -47,15 +49,20 @@ public class Clone_Skill_Controller : MonoBehaviour
         cloneTimer = -.1f;
     }
 
-    private void AttackTrigger() {
+    private void AttackTrigger()
+    {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(attackCheck.position, attackCheckRadius);
 
-        foreach (var hit in colliders) {
-            if (hit.GetComponent<Enemy>() != null) {
+        foreach (var hit in colliders)
+        {
+            if (hit.GetComponent<Enemy>() != null)
+            {
+                player.stats.DoDamage(hit.GetComponent<CharacterStats>());
 
-                hit.GetComponent<Enemy>().DamageEffect();
-                if(canDuplicateClone){
-                    if(Random.Range(0,100) < chanceToDuplicate){
+                if (canDuplicateClone)
+                {
+                    if (Random.Range(0, 100) < chanceToDuplicate)
+                    {
                         SkillManager.instance.clone.CreateClone(hit.transform, new Vector3(.5f * facingDir, 0));
                     }
                 }
