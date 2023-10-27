@@ -42,6 +42,7 @@ public class ItemData_Equipment : ItemData
 
     public void AddModifiers() {
         PlayerStats playerStats = PlayerManager.instance.player.GetComponent<PlayerStats>();
+        int currentHealth = playerStats.currentHealth; 
 
         playerStats.strength.AddModifier(strength);
         playerStats.agility.AddModifier(agility);
