@@ -15,7 +15,11 @@ public class PlayerAnimationTriggers : MonoBehaviour
         foreach (var hit in colliders) {
             if (hit.GetComponent<Enemy>() != null) {
                 EnemyStats _target = hit.GetComponent<EnemyStats>();
-                player.stats.DoDamage(_target);
+
+                if (_target != null)
+                {
+                    player.stats.DoDamage(_target);
+                }
 
                 //inventory get weapon call item effect
                 ItemData_Equipment weaponData = Inventory.instance.GetEquipment(EquipmentType.Weapon);
