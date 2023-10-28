@@ -1180,7 +1180,7 @@ MonoBehaviour:
     baseValue: 0
     modifiers: 
   maxHealth:
-    baseValue: 500
+    baseValue: 1000
     modifiers: 
   armor:
     baseValue: 0
@@ -3631,7 +3631,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 86de61bbe102c489fa23b3a1d8085621, type: 2}
   - {fileID: 11400000, guid: 65bcbed505a194ba7894edbe079bf715, type: 2}
   - {fileID: 11400000, guid: da3d1fae3452f45858134e396a2ddba3, type: 2}
-  - {fileID: 11400000, guid: da06673f5cb0c46a887d3304e38f92f6, type: 2}
+  - {fileID: 11400000, guid: 4afab71fb74fe4dd584219090be718cb, type: 2}
+  - {fileID: 11400000, guid: 8c3c417cb12144e27abadef3c5a39d01, type: 2}
+  - {fileID: 11400000, guid: fac77fbfa2f2a4c0c8d8a9829b95764c, type: 2}
+  - {fileID: 11400000, guid: 45ac7918409f8483f874967e87a35f00, type: 2}
   equipment: []
   inventory: []
   stash: []
@@ -13451,7 +13454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fx: {fileID: 0}
   strength:
-    baseValue: 100
+    baseValue: 10
     modifiers: 
   agility:
     baseValue: 0
@@ -13472,7 +13475,7 @@ MonoBehaviour:
     baseValue: 0
     modifiers: 
   maxHealth:
-    baseValue: 1
+    baseValue: 500
     modifiers: 
   armor:
     baseValue: 20
@@ -13484,10 +13487,10 @@ MonoBehaviour:
     baseValue: 1
     modifiers: 
   fireDamage:
-    baseValue: 1
+    baseValue: 0
     modifiers: 
   iceDamage:
-    baseValue: 2
+    baseValue: 0
     modifiers: 
   lightingDamage:
     baseValue: 0
@@ -13959,7 +13962,7 @@ MonoBehaviour:
     baseValue: 0
     modifiers: 
   maxHealth:
-    baseValue: 10000
+    baseValue: 1000
     modifiers: 
   armor:
     baseValue: 0
