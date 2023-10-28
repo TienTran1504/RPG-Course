@@ -84,6 +84,18 @@ public class CharacterStats : MonoBehaviour
         }
     }
 
+    public virtual void IncreaseStatBy(int _modifier, float _duration, Stat _statToModify){
+        // start coroutine for stat increase
+        StartCoroutine(StatModCoroutine(_modifier,_duration,_statToModify));
+        
+    }
+
+    private IEnumerator StatModCoroutine(int _modifier, float _duration, Stat _statToModify){
+        _statToModify.AddModifier(_modifier);
+
+        yield return new WaitForSeconds(_duration);
+        _statToModify.RemoveModifier(_modifier);
+    }
 
 
     public virtual void DoDamage(CharacterStats _targetStats){
@@ -101,7 +113,7 @@ public class CharacterStats : MonoBehaviour
         _targetStats.TakeDamage(totalDamage);
 
         //if inventory current weapon has fire(ice,lightning) effect then add line code below
-        // DoMagicalDamage(_targetStats);
+        DoMagicalDamage(_targetStats);
     }
     
     #region MagicalDamage and ailments

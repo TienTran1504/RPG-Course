@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 447d4653ca7754c94be77444624365b9, type: 3}
-  m_Name: Healing flask
+  m_Name: Armor flask
   m_EditorClassIdentifier: 
-  itemType: 1
-  itemName: Healing flask
-  icon: {fileID: -410334530, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
+  itemType: 0
+  itemName: 
+  icon: {fileID: 0}
   dropChance: 0
-  equipmentType: 3
-  itemEffects:
-  - {fileID: 0}
+  equipmentType: 0
+  itemCooldown: 0
+  itemEffects: []
   strength: 0
   agility: 0
   intelligence: 0
