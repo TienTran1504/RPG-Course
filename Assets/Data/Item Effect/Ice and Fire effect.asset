@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261778a8f00c74ba48bd05869b06b074, type: 3}
   m_Name: Ice and Fire effect
   m_EditorClassIdentifier: 
-  iceAndFirePrefab: {fileID: 0}
-  newVelocity: {x: 0, y: 0}
+  iceAndFirePrefab: {fileID: 9088594479335020512, guid: 4f560c78d5b014758b0000439332b111, type: 3}
+  xVelocity: 10

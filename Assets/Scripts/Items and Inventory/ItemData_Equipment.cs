@@ -12,6 +12,7 @@ public class ItemData_Equipment : ItemData
 {
     public EquipmentType equipmentType;
 
+    public float itemCooldown;
     public ItemEffect[] itemEffects;
 
     [Header("Major stats")]
