@@ -1,4 +1,4 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -7,13 +7,13 @@ using UnityEngine.UI;
 
 public class UI_ItemSlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
 {
-    [SerializeField] private Image itemImage;
-    [SerializeField] private TextMeshProUGUI itemText;
-    private UI ui;
+    [SerializeField] protected Image itemImage;
+    [SerializeField] protected TextMeshProUGUI itemText;
+    protected UI ui;
 
     public InventoryItem item;
 
-    private void Start(){
+    protected virtual void Start(){
         ui = GetComponentInParent<UI>();
     }
 
@@ -50,6 +50,8 @@ public class UI_ItemSlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHand
             // Debug.Log("Equiped new item + " + item.data.itemName);
             Inventory.instance.EquipItem(item.data);
         }
+
+        ui.itemToolTip.HideToolTip();
     }
 
     public void OnPointerEnter(PointerEventData eventData)

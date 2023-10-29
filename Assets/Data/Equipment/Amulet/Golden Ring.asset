@@ -10,32 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 447d4653ca7754c94be77444624365b9, type: 3}
-  m_Name: Amulet of God
+  m_Name: Golden Ring
   m_EditorClassIdentifier: 
   itemType: 1
-  itemName: Amulet of God
-  icon: {fileID: -245851270, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
-  dropChance: 20
+  itemName: Golden Ring
+  icon: {fileID: -878758905, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
+  dropChance: 0
   equipmentType: 2
   itemCooldown: 0
-  itemEffects:
-  - {fileID: 11400000, guid: dc5f9d0d065c647609864b3d74b09d9c, type: 2}
-  strength: 0
+  itemEffects: []
+  strength: 74
   agility: 0
   intelligence: 0
   vitality: 0
   damage: 0
   critChance: 0
   critPower: 0
-  health: 12
-  armor: 0
-  evasion: 0
-  magicResistance: 15
+  health: 36
+  armor: 42
+  evasion: 32
+  magicResistance: 40
   fireDamage: 0
   iceDamage: 0
-  lightingDamage: 10
+  lightingDamage: 0
   craftingMaterials:
   - data: {fileID: 11400000, guid: da06673f5cb0c46a887d3304e38f92f6, type: 2}
-    stackSize: 15
+    stackSize: 5
   - data: {fileID: 11400000, guid: 6a10abf93799f471f9be346c4c916493, type: 2}
-    stackSize: 12
+    stackSize: 2
