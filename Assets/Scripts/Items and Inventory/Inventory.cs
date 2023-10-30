@@ -31,7 +31,7 @@ public class Inventory : MonoBehaviour
     [Header("Items cooldown")]
     private float lastTimeUsedFlask;
     private float lastTimeUsedArmor;
-    private float flaskCooldown;
+    public float flaskCooldown { get; private set; }
     private float armorCooldown;
 
 

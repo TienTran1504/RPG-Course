@@ -85,6 +85,8 @@ public class Sword_Skill_Controller : MonoBehaviour
         transform.parent = null;
         isReturning = true;
 
+        //sword.skill.setcooldown
+
     }
 
     private void Update() {
