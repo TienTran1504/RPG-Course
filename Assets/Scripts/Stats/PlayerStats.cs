@@ -39,4 +39,25 @@ public class PlayerStats : CharacterStats
         player.skill.dodge.CreateMirageOnDodge();
     }
 
+    public void CloneDoDamage(CharacterStats _targetStats, float _multiplier){
+        if (TargetCanAvoidAttack(_targetStats)) return;
+
+
+        int totalDamage = damage.GetValue() + strength.GetValue();
+        if(_multiplier >0){
+            totalDamage = Mathf.RoundToInt(totalDamage * _multiplier);
+        }
+
+        if(CanCrit()){
+            totalDamage = CalculateCriticalDamage(totalDamage);
+        }
+
+
+        totalDamage = CheckTargetArmor(_targetStats, totalDamage);
+        _targetStats.TakeDamage(totalDamage);
+
+        //if inventory current weapon has fire(ice,lightning) effect then add line code below
+        DoMagicalDamage(_targetStats);
+    }
+
 }

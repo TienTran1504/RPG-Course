@@ -14,6 +14,10 @@ public class UI : MonoBehaviour
     public UI_StatToolTip statToolTip;
     public UI_CraftWindow craftWindow;
 
+    private void Awake() {
+        SwitchTo(skillTreeUI); // Assign events on skill tree slots before assigning events on skill scripts
+    }
+
     void Start() {
         // itemToolTip = GetComponentInChildren<UI_ItemToolTip>();
         SwitchTo(null);
