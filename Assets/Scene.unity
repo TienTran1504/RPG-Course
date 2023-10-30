@@ -1313,8 +1313,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 26
+  m_fontSizeBase: 26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1349,7 +1349,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 66.443306, z: 0, w: 0}
+  m_margin: {x: 17.869204, y: 104.06528, z: 15.31636, w: 17.869095}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1389,10 +1389,10 @@ RectTransform:
   - {fileID: 480627266}
   m_Father: {fileID: 1371529368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1050, y: -50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &87827754
 MonoBehaviour:
@@ -2316,7 +2316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 100
+  skillCost: 0
   skillName: Dash
   skillDescription: 'You can dash to avoid attacks
 
@@ -2624,7 +2624,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &174200084
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2774,10 +2774,10 @@ RectTransform:
   - {fileID: 860050278}
   m_Father: {fileID: 1371529368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1350, y: -50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &189103530
 MonoBehaviour:
@@ -4373,7 +4373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 0
   skillName: Time mirage
   skillDescription: 'Your mirage can attack targets.
 
@@ -4650,7 +4650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 0
   skillName: Dodge
   skillDescription: You getting 10% of a evasion
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
@@ -5795,7 +5795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 300
+  skillCost: 0
   skillName: Dash - "Actually Here i am
   skillDescription: You create mirage at you arrival
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
@@ -6037,7 +6037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 0
   skillName: Multiple distruction
   skillDescription: You can create up to 3 crystal at a time.
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
@@ -6433,7 +6433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 500
+  skillCost: 0
   skillName: Parry with a mirage
   skillDescription: You create a clone with successful parry.
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
@@ -7453,7 +7453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 500
   skillName: Time Stop
   skillDescription: Whenenemy hit by sword, his time stops.
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
@@ -7960,6 +7960,7 @@ GameObject:
   - component: {fileID: 493482684}
   - component: {fileID: 493482688}
   - component: {fileID: 493482687}
+  - component: {fileID: 493482689}
   m_Layer: 5
   m_Name: Item_ToolTip
   m_TagString: Untagged
@@ -7986,9 +7987,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -330}
+  m_AnchoredPosition: {x: 0, y: -473.65506}
   m_SizeDelta: {x: 350, y: 287.31}
-  m_Pivot: {x: 0.5, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &493482684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8001,6 +8002,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc6bd4af0e3404629ac2168b0e1050bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xLimit: 960
+  yLimit: 540
+  xOffset: 250
+  yOffset: 150
   itemNameText: {fileID: 991662822}
   itemTypeText: {fileID: 1976775086}
   itemDescription: {fileID: 1427293948}
@@ -8083,6 +8088,18 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!225 &493482689
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493482682}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &496481336
 GameObject:
   m_ObjectHideFlags: 0
@@ -11002,7 +11019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 0
   skillName: Blackhole
   skillDescription: YYou trap enemies in a blackhole which allows you to don tons
     of damage.
@@ -11439,7 +11456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 0
   skillName: Agressive Mirage
   skillDescription: 'Your mirage has 80% of your damage.
 
@@ -13285,7 +13302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 0
   skillName: Multiple Mirage
   skillDescription: 'Your mirage has 30% of your attack
 
@@ -14018,7 +14035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 0
   skillName: Controlled Destruction
   skillDescription: 'Crytal moves towards the enemy.
 
@@ -14849,7 +14866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 250
+  skillCost: 0
   skillName: Restore with parry
   skillDescription: You restore a bit of health with successful parry.
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
@@ -15190,10 +15207,10 @@ RectTransform:
   - {fileID: 205850254}
   m_Father: {fileID: 1371529368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 750, y: -50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1048588936
 MonoBehaviour:
@@ -15323,10 +15340,10 @@ RectTransform:
   - {fileID: 449325515}
   m_Father: {fileID: 1371529368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 450, y: -50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1050490226
 MonoBehaviour:
@@ -16836,7 +16853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 0
   skillName: Crystal
   skillDescription: 'You create magic crystal that does magic damage.
 
@@ -16959,13 +16976,14 @@ GameObject:
   - component: {fileID: 1173393401}
   - component: {fileID: 1173393400}
   - component: {fileID: 1173393398}
+  - component: {fileID: 1173393402}
   m_Layer: 5
   m_Name: SkillToolTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1173393398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16978,8 +16996,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d832104ac88b242288face95cb785fb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xLimit: 960
+  yLimit: 540
+  xOffset: 150
+  yOffset: 150
   skillText: {fileID: 81767805}
   skillName: {fileID: 1978843361}
+  skillCost: {fileID: 1860763285}
+  defaultNameFontSize: 34
 --- !u!224 &1173393399
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16994,12 +17018,13 @@ RectTransform:
   m_Children:
   - {fileID: 81767803}
   - {fileID: 1978843363}
+  - {fileID: 1860763287}
   m_Father: {fileID: 1517372702}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -380}
-  m_SizeDelta: {x: 900, y: 210}
+  m_AnchoredPosition: {x: 0, y: -225}
+  m_SizeDelta: {x: 350, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1173393400
 MonoBehaviour:
@@ -17039,6 +17064,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173393397}
   m_CullTransparentMesh: 1
+--- !u!225 &1173393402
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173393397}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &1191042356
 GameObject:
   m_ObjectHideFlags: 0
@@ -17205,7 +17242,7 @@ RectTransform:
   m_Father: {fileID: 607038306}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -17654,7 +17691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 1500
   skillName: Vulnerability
   skillDescription: Enemy hit by sword, takes 10% more damage.
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
@@ -17878,7 +17915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 50
+  skillCost: 0
   skillName: Parry
   skillDescription: You can parry attack to avoid damge.
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
@@ -18721,7 +18758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 0
   skillName: Dodge Mirage
   skillDescription: You can create mirage on dodge
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
@@ -19152,7 +19189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 100
   skillName: Sword Throw
   skillDescription: Throw Sword into the enemy.
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
@@ -19292,7 +19329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 500
   skillName: Bouncy Sword
   skillDescription: 'Sword can bounce between targets.
 
@@ -20478,7 +20515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 0
   skillName: Crystal Mirage
   skillDescription: 'You create crystal instead of mirage
 
@@ -21189,6 +21226,7 @@ GameObject:
   - component: {fileID: 1455818102}
   - component: {fileID: 1455818101}
   - component: {fileID: 1455818099}
+  - component: {fileID: 1455818103}
   m_Layer: 5
   m_Name: Stat_ToolTip
   m_TagString: Untagged
@@ -21208,6 +21246,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2b36a07904da4016b64b9c0ed142483, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xLimit: 960
+  yLimit: 540
+  xOffset: 250
+  yOffset: 100
   description: {fileID: 912292285}
 --- !u!224 &1455818100
 RectTransform:
@@ -21267,6 +21309,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455818098}
   m_CullTransparentMesh: 1
+--- !u!225 &1455818103
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455818098}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &1461758760
 GameObject:
   m_ObjectHideFlags: 0
@@ -21299,7 +21353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 0
   skillName: Bullet Sword
   skillDescription: 'Sword can peirce targets.
 
@@ -22495,7 +22549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 0
   skillName: ' Expolosion'
   skillDescription: 'Crysal can explode
 
@@ -26358,7 +26412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 200
+  skillCost: 0
   skillName: Dash - "Here i am"
   skillDescription: You leave mirage when you dash
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
@@ -26518,7 +26572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 0
   skillName: Chainsaw Sword
   skillDescription: 'Sword will spin like a chainsaw.
 
@@ -26855,7 +26909,7 @@ RectTransform:
   m_Father: {fileID: 234424931}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0.73749924}
   m_SizeDelta: {x: 100, y: 66.2749}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -29438,6 +29492,140 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1860763284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1860763287}
+  - component: {fileID: 1860763286}
+  - component: {fileID: 1860763285}
+  m_Layer: 5
+  m_Name: SkillCost
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1860763285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860763284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 84bdc42b70bb5e54aa18bb33c1fa834e, type: 2}
+  m_sharedMaterial: {fileID: -8065883861848785263, guid: 84bdc42b70bb5e54aa18bb33c1fa834e, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 32
+  m_fontSizeBase: 32
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 4
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 14.333313, y: 0, z: 22.933487, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1860763286
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860763284}
+  m_CullTransparentMesh: 1
+--- !u!224 &1860763287
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860763284}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1173393399}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 350, y: 50}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &1861470177
 GameObject:
   m_ObjectHideFlags: 0
@@ -34009,7 +34197,7 @@ RectTransform:
   m_Father: {fileID: 808813483}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -34084,7 +34272,7 @@ RectTransform:
   m_Father: {fileID: 137682465}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0.73749924}
   m_SizeDelta: {x: 100, y: 66.2749}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -35188,8 +35376,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -35224,7 +35412,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -341.70804, y: 0, z: -344.08118, w: -11.864872}
+  m_margin: {x: -0.61720276, y: 0, z: 0.42042547, w: -11.864872}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -35254,8 +35442,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 71}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 1.4379, y: 174}
+  m_SizeDelta: {x: 331.3331, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1980823586 stripped
 RectTransform:
@@ -36723,7 +36911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881119f44ccd341bc962c4b3780d1b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillPrice: 0
+  skillCost: 0
   skillName: Mirage blink
   skillDescription: 'You leave your mirage instead of you when you blink.
 
