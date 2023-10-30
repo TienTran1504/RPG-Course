@@ -46,7 +46,7 @@ public class SaveManager : MonoBehaviour
         }
 
         Debug.Log("Loaded currency " + gameData.currency);
-        Debug.Log("Path: "+ Application.persistentDataPath);
+        // Debug.Log("Path: "+ Application.persistentDataPath);
     }
     public void SaveGame(){
         //data handler save game data
