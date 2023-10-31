@@ -2488,6 +2488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: data.dev
+  encryptData: 1
 --- !u!4 &162812440
 Transform:
   m_ObjectHideFlags: 0
