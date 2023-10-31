@@ -2458,6 +2458,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1915144025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &162812438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 162812440}
+  - component: {fileID: 162812439}
+  m_Layer: 0
+  m_Name: SaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &162812439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162812438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614ec602aaf1e495b913d52cc31cc107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileName: data.dev
+--- !u!4 &162812440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162812438}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 564.4808, y: 359.91708, z: -17.228622}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &164831969 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 430964885506938623, guid: f4a1aa380438340bc92f868cf2a1b335, type: 3}
@@ -12996,8 +13041,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e5363067ab9384519be46d4d0d713a9f, type: 2}
   - {fileID: 11400000, guid: a7fa57e1a34524c62a4ba7fb90e7e778, type: 2}
   - {fileID: 11400000, guid: f6509b1f105494b0f91cf93925bdc189, type: 2}
-  - {fileID: 11400000, guid: 4afab71fb74fe4dd584219090be718cb, type: 2}
-  - {fileID: 11400000, guid: 8c3c417cb12144e27abadef3c5a39d01, type: 2}
   - {fileID: 11400000, guid: fac77fbfa2f2a4c0c8d8a9829b95764c, type: 2}
   - {fileID: 11400000, guid: 45ac7918409f8483f874967e87a35f00, type: 2}
   - {fileID: 11400000, guid: 8460974efdcf142459121b6021511406, type: 2}
@@ -13018,15 +13061,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: da06673f5cb0c46a887d3304e38f92f6, type: 2}
   equipment: []
   inventory: []
-  stash:
-  - data: {fileID: 11400000, guid: da06673f5cb0c46a887d3304e38f92f6, type: 2}
-    stackSize: 20
-  - data: {fileID: 11400000, guid: 6a10abf93799f471f9be346c4c916493, type: 2}
-    stackSize: 30
+  stash: []
   inventorySlotParent: {fileID: 1483361023}
   stashSlotParent: {fileID: 476330204}
   equipmentSlotParent: {fileID: 1954874723}
   statSlotParent: {fileID: 177492722}
+  loadedItems: []
 --- !u!4 &923053149
 Transform:
   m_ObjectHideFlags: 0
@@ -37610,6 +37650,7 @@ SceneRoots:
   - {fileID: 113009205}
   - {fileID: 631945258}
   - {fileID: 1721866689}
+  - {fileID: 162812440}
   - {fileID: 362888960}
   - {fileID: 1607040617439155403}
   - {fileID: 727742744}
