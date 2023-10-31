@@ -44,6 +44,7 @@ public class Blackhole_Skill : Skill
         base.Start();
         blackHoleUnlockButton.GetComponent<Button>().onClick.AddListener(UnlockBlackhole);
     }
+    
 
     protected override void Update()
     {
@@ -63,5 +64,11 @@ public class Blackhole_Skill : Skill
 
     public float GetBlackholeRadius(){
         return maxSize / 2;
+    }
+
+    protected override void CheckUnlock()
+    {
+        base.CheckUnlock();
+        UnlockBlackhole();
     }
 }
