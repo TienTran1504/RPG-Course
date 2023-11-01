@@ -116,7 +116,7 @@ public class Sword_Skill_Controller : MonoBehaviour
             if(wasStopped){
                 spinTimer -= Time.deltaTime;
 
-                // transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x + spinDirection, transform.position.y), 1.5f * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x + spinDirection, transform.position.y), 1.5f * Time.deltaTime);
                 
                 if(spinTimer <0) {
                     isReturning = true;
