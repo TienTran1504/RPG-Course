@@ -16,6 +16,8 @@ public class GameData
     public float lostCurrencyX;
     public float lostCurrencyY;
     public int lostCurrencyAmount;
+
+    public SerializableDictionary<string, float> volmueSettings;
     public GameData(){
         this.lostCurrencyX = 0;
         this.lostCurrencyY = 0;
@@ -27,5 +29,7 @@ public class GameData
 
         closestCheckpointId = string.Empty;
         checkpoints = new SerializableDictionary<string, bool>();
+
+        volmueSettings = new SerializableDictionary<string, float>();
     }
 }
