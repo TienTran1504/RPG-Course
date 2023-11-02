@@ -325,6 +325,11 @@ public class CharacterStats : MonoBehaviour
         isDead = true;
     }
 
+    public void KillEntity(){
+        if(!isDead){
+            Die();
+        }
+    }
     public virtual void OnEvasion(){
 
     }
