@@ -66,6 +66,7 @@ public class CharacterStats : MonoBehaviour
 
     public System.Action onHealthChanged;
     public bool isDead { get; private set; }
+    public bool isInvincible { get; private set; }
     private bool isVulnerable;
 
 
@@ -295,6 +296,9 @@ public class CharacterStats : MonoBehaviour
     }
     #endregion
     public virtual void TakeDamage(int _damage){
+
+        if (isInvincible) return;
+        
         DecreaseHealthBy(_damage);
         GetComponent<Entity>().DamageImpact();
         fx.StartCoroutine("FlashFX");
@@ -329,6 +333,9 @@ public class CharacterStats : MonoBehaviour
         if(!isDead){
             Die();
         }
+    }
+    public void MakeInvincible(bool _invincible){
+        isInvincible = _invincible;
     }
     public virtual void OnEvasion(){
 
