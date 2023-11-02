@@ -126,6 +126,8 @@ public class CharacterStats : MonoBehaviour
 
     public virtual void DoDamage(CharacterStats _targetStats){
 
+        bool criticalStrike = false;
+
         if (TargetCanAvoidAttack(_targetStats)) return;
 
         _targetStats.GetComponent<Entity>().SetupKnockbackDir(transform);
@@ -134,7 +136,10 @@ public class CharacterStats : MonoBehaviour
 
         if(CanCrit()){
             totalDamage = CalculateCriticalDamage(totalDamage);
+            criticalStrike = true;
         }
+
+        fx.CreateHitFx(_targetStats.transform,criticalStrike);
 
 
         totalDamage = CheckTargetArmor(_targetStats, totalDamage);
