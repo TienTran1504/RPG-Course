@@ -16,6 +16,7 @@ public class PlayerDashState : PlayerState
         stateTimer = player.dashDuration;
 
         player.stats.MakeInvincible(true);
+
     }
 
     public override void Exit()
@@ -37,6 +38,8 @@ public class PlayerDashState : PlayerState
         if(stateTimer <0){
             stateMachine.ChangeState(player.idleState);
         }
+
+        player.fx.CreateAfterImage();
     }
 
 }
