@@ -57150,6 +57150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039d20f6738874371a16d4a350143cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  popUpTextPrefab: {fileID: 7837610366389569803, guid: 4fe63218668bd46278befd306664f0d9, type: 3}
   shakeMultiplier: 0.2
   shakeSwordImpact: {x: 1, y: 0, z: 0}
   shakeHighDamage: {x: 1.3, y: 1.3, z: 0}
@@ -61828,6 +61829,10 @@ PrefabInstance:
       propertyPath: criticalHitFx
       value: 
       objectReference: {fileID: 1748528559850242689, guid: 003561ca4d6f84a669c032a43a65c437, type: 3}
+    - target: {fileID: 6609073318808882040, guid: 367c5c58c4b63426a8d345fdf71d8b96, type: 3}
+      propertyPath: popUpTextPrefab
+      value: 
+      objectReference: {fileID: 7837610366389569803, guid: 4fe63218668bd46278befd306664f0d9, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

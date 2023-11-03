@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
+using TMPro;
 using UnityEngine;
 
 public class EntityFX : MonoBehaviour
 {
     private Player player;
     private SpriteRenderer sr;
+
+    [Header("Pop Up Text")]
+    [SerializeField] private GameObject popUpTextPrefab;
 
     [Header("Screen shake fx")]
     private CinemachineImpulseSource screenShake;
@@ -53,6 +57,17 @@ public class EntityFX : MonoBehaviour
 
     private void Update() {
         afterImageCooldownTimer -= Time.deltaTime;
+    }
+
+    public void CreatePopUpText(string _text){
+        float randomX = Random.Range(-1, 1);
+        float randomY = Random.Range(1, 5);
+        Vector3 positionOffset = new Vector3(randomX,randomY, 0);
+        GameObject newText = Instantiate(popUpTextPrefab, transform.position + positionOffset, Quaternion.identity);
+
+        newText.GetComponent<TextMeshPro>().text = _text;
+
+
     }
 
     public void ScreenShake(Vector3 _shakePower){

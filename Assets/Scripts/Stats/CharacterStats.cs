@@ -326,6 +326,9 @@ public class CharacterStats : MonoBehaviour
             _damage = Mathf.RoundToInt(_damage * 1.1f);
         }
         currentHealth -= _damage;
+        if(_damage >0){
+            fx.CreatePopUpText(_damage.ToString());
+        }
         if(onHealthChanged != null){
             onHealthChanged();
         }
