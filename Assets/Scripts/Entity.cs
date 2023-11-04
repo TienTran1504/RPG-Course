@@ -104,7 +104,7 @@ public class Entity : MonoBehaviour
     public virtual bool IsWallDectected() => Physics2D.Raycast(wallCheck.position, Vector2.right * facingDir, wallCheckDistance, whatIsGround);
     protected virtual void OnDrawGizmos() {
         Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
-        Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y));
+        Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance * facingDir, wallCheck.position.y));
         Gizmos.DrawWireSphere(attackCheck.position, attackCheckRadius);
     }
     #endregion
@@ -126,6 +126,13 @@ public class Entity : MonoBehaviour
             Flip();
         }else if (_x < 0 && facingRight){
             Flip();
+        }
+    }
+
+    public virtual void SetupDefaultFacingDir(int _direction){
+        facingDir = _direction;
+        if(facingDir == -1){
+            facingRight = false;
         }
     }
     #endregion
