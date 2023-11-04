@@ -7,6 +7,7 @@ public class SaveManager : MonoBehaviour
     public static SaveManager instance;
 
     [SerializeField] private string fileName;
+    // [SerializeField] private string filePath = "idbfs/dev20021234tien";
     [SerializeField] private bool encryptData;
     private GameData gameData;
     private List<ISaveManager> saveManagers;

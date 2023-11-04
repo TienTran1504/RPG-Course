@@ -36,6 +36,7 @@ public class Inventory : MonoBehaviour, ISaveManager
     private float armorCooldown;
 
     [Header("Database")]
+    public List<ItemData> itemDatabase;
     public List<InventoryItem> loadedItems;
     public List<ItemData_Equipment> loadedEquipment;
 
@@ -304,7 +305,7 @@ public class Inventory : MonoBehaviour, ISaveManager
     {
         foreach (KeyValuePair<string,int> pair in _data.inventory)
         {
-            foreach (var item in GetItemDatabase())
+            foreach (var item in itemDatabase)
             {
                 if(item != null && item.itemId == pair.Key){
                     InventoryItem itemToLoad = new InventoryItem(item);
@@ -315,7 +316,7 @@ public class Inventory : MonoBehaviour, ISaveManager
             }
         }
         foreach (string loadedItemId in _data.equipmentId){
-            foreach(var item in GetItemDatabase()){
+            foreach(var item in itemDatabase){
                 if(item!= null && loadedItemId == item.itemId){
                     loadedEquipment.Add(item as ItemData_Equipment);
                 }
@@ -344,7 +345,9 @@ public class Inventory : MonoBehaviour, ISaveManager
         }
     }
 
-
+#if UNITY_EDITOR
+    [ContextMenu("Fill up item database")]
+    private void FillUpItemDatabase() => itemDatabase = new List<ItemData>(GetItemDatabase());
     private List<ItemData> GetItemDatabase(){
         List<ItemData> itemDatabase = new List<ItemData>();
         string[] assetNames = AssetDatabase.FindAssets("",new[] {"Assets/Data/Items"});
@@ -358,4 +361,5 @@ public class Inventory : MonoBehaviour, ISaveManager
 
         return itemDatabase;
     }
+#endif
 }

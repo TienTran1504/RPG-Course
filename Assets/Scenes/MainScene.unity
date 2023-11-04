@@ -25004,7 +25004,7 @@ GameObject:
   - component: {fileID: 923053149}
   - component: {fileID: 923053148}
   m_Layer: 0
-  m_Name: Inventory
+  m_Name: InventoryManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25055,6 +25055,29 @@ MonoBehaviour:
   stashSlotParent: {fileID: 476330204}
   equipmentSlotParent: {fileID: 1954874723}
   statSlotParent: {fileID: 177492722}
+  itemDatabase:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: e5363067ab9384519be46d4d0d713a9f, type: 2}
+  - {fileID: 11400000, guid: 668a65591cddc4fa3b01a14b55a96f99, type: 2}
+  - {fileID: 11400000, guid: 338cbaae261774d4faf17f7466ceda0d, type: 2}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 8460974efdcf142459121b6021511406, type: 2}
+  - {fileID: 11400000, guid: f6509b1f105494b0f91cf93925bdc189, type: 2}
+  - {fileID: 11400000, guid: 5be771479689f4ac4bc056909764b079, type: 2}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 4afab71fb74fe4dd584219090be718cb, type: 2}
+  - {fileID: 11400000, guid: 8c3c417cb12144e27abadef3c5a39d01, type: 2}
+  - {fileID: 11400000, guid: fac77fbfa2f2a4c0c8d8a9829b95764c, type: 2}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 45ac7918409f8483f874967e87a35f00, type: 2}
+  - {fileID: 11400000, guid: a7fa57e1a34524c62a4ba7fb90e7e778, type: 2}
+  - {fileID: 11400000, guid: 86de61bbe102c489fa23b3a1d8085621, type: 2}
+  - {fileID: 11400000, guid: 65bcbed505a194ba7894edbe079bf715, type: 2}
+  - {fileID: 11400000, guid: da3d1fae3452f45858134e396a2ddba3, type: 2}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: da06673f5cb0c46a887d3304e38f92f6, type: 2}
+  - {fileID: 11400000, guid: 6a10abf93799f471f9be346c4c916493, type: 2}
   loadedItems: []
   loadedEquipment: []
 --- !u!4 &923053149
@@ -25065,12 +25088,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 923053147}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -30.38179, y: -1.0905725, z: -0.119623005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1228394431}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &930853870
 GameObject:
@@ -30262,6 +30285,7 @@ Transform:
   - {fileID: 2054020216}
   - {fileID: 362888960}
   - {fileID: 218309485}
+  - {fileID: 923053149}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1229791788
@@ -47797,7 +47821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -59545,7 +59569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -61848,7 +61872,6 @@ SceneRoots:
   - {fileID: 631945258}
   - {fileID: 1228394431}
   - {fileID: 727742744}
-  - {fileID: 923053149}
   - {fileID: 1004332868}
   - {fileID: 1441733558}
   - {fileID: 1298662237}
