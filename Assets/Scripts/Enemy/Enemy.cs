@@ -25,6 +25,7 @@ public class Enemy : Entity
     private float defaultMoveSpeed;
 
     [Header("Attack Info")]
+    public float agroDistance = 2;
     public float attackDistance;
     public float attackCoolDown;
     public float minAttackCoolDown;

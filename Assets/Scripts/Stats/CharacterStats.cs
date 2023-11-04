@@ -128,6 +128,8 @@ public class CharacterStats : MonoBehaviour
 
         bool criticalStrike = false;
 
+        if (_targetStats.isInvincible) return;
+
         if (TargetCanAvoidAttack(_targetStats)) return;
 
         _targetStats.GetComponent<Entity>().SetupKnockbackDir(transform);

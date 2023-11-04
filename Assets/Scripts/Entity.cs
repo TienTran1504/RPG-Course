@@ -15,6 +15,7 @@ public class Entity : MonoBehaviour
 
     [Header("Knockback info")]
     [SerializeField] protected Vector2 knockbackPower;
+    [SerializeField] protected Vector2 knockbackOffset;
     [SerializeField] protected float knockbackDuration;
     protected bool isKnocked;
 
@@ -73,9 +74,10 @@ public class Entity : MonoBehaviour
     public void SetupKnockbackPower(Vector2 _knockbackPower) => knockbackPower = _knockbackPower;
     protected virtual IEnumerator HitKnockback(){
         isKnocked = true;
-
-        // rb.velocity = new Vector2(knockbackPower.x * -knockbackDir, knockbackPower.y);
-        rb.velocity = new Vector2(knockbackPower.x * knockbackDir, knockbackPower.y);
+        float xOffset = Random.Range(knockbackOffset.x, knockbackOffset.y);
+        // if (knockbackPower.x > 0 || knockbackPower.y >0) // makes player imune to freeze effect when being hit
+        rb.velocity = new Vector2((knockbackPower.x + xOffset)* knockbackDir, knockbackPower.y);
+        
         yield return new WaitForSeconds(knockbackDuration);
         isKnocked = false;
         SetupZeroKnockbackPower();
