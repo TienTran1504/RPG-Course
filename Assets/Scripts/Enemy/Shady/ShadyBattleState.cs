@@ -28,10 +28,8 @@ public class ShadyBattleState : EnemyState
     public override void Update()
     {
         base.Update();
-
         if (enemy.IsPlayerDetected())
         {
-
             stateTimer = enemy.battleTime;
             if (enemy.IsPlayerDetected().distance < enemy.attackDistance)
             {

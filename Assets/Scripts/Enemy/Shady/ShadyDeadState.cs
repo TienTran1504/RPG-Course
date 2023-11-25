@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShadyDeadState : EnemyState
 {
-    protected Enemy_Shady enemy;
+    private Enemy_Shady enemy;
     public ShadyDeadState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, Enemy_Shady _enemy) : base(_enemyBase, _stateMachine, _animBoolName)
     {
         this.enemy = _enemy;

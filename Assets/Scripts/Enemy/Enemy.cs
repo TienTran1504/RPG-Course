@@ -119,12 +119,14 @@ public class Enemy : Entity
 
     public virtual RaycastHit2D IsPlayerDetected(){
 
-        float playerDistanceCheck = 50;
-        RaycastHit2D playerDetected=  Physics2D.Raycast(wallCheck.position, Vector2.right * facingDir,playerDistanceCheck,whatIsPlayer);
-        RaycastHit2D wallDetected = Physics2D.Raycast(wallCheck.position, Vector2.right * facingDir, playerDistanceCheck+1, whatIsGround); // to be a bit longer than player check
-        if(wallDetected){
-            return default(RaycastHit2D);
-        }
+        // float playerDistanceCheck = 50;
+        // RaycastHit2D playerDetected=  Physics2D.Raycast(wallCheck.position, Vector2.right * facingDir,playerDistanceCheck,whatIsPlayer);
+        // RaycastHit2D wallDetected = Physics2D.Raycast(wallCheck.position, Vector2.right * facingDir, playerDistanceCheck+1, whatIsGround); // to be a bit longer than player check
+        // if(wallDetected){
+        //     return default(RaycastHit2D);
+        // }
+        RaycastHit2D playerDetected=  Physics2D.Raycast(wallCheck.position, Vector2.right * facingDir,50,whatIsPlayer);
+
         
         return playerDetected;
     }

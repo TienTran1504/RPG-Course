@@ -62107,6 +62107,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1593229399370970125, guid: 4d27a4a5087834ea5a71fb73d9bdab05, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016148073903600195, guid: 4d27a4a5087834ea5a71fb73d9bdab05, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.307
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016148073903600195, guid: 4d27a4a5087834ea5a71fb73d9bdab05, type: 3}
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6106580480116687164, guid: 4d27a4a5087834ea5a71fb73d9bdab05, type: 3}
@@ -62151,11 +62159,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7340603346025923730, guid: 4d27a4a5087834ea5a71fb73d9bdab05, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7340603346025923730, guid: 4d27a4a5087834ea5a71fb73d9bdab05, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -62361,11 +62369,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1073629209904492936, guid: 367c5c58c4b63426a8d345fdf71d8b96, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1073629209904492936, guid: 367c5c58c4b63426a8d345fdf71d8b96, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2950098362499196627, guid: 367c5c58c4b63426a8d345fdf71d8b96, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62413,7 +62421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3587338915508967158, guid: 367c5c58c4b63426a8d345fdf71d8b96, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4012199449157513870, guid: 367c5c58c4b63426a8d345fdf71d8b96, type: 3}
       propertyPath: damage.baseValue
